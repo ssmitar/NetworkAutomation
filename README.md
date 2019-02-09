@@ -8,9 +8,9 @@ Goal of this project is to get a command from an user, feed it to Python script,
 3) Finally a Python script which will automate the task. 
 
 Python scripts does following:
-1) There are three text files which were feed into the scipt. One file containing management IP addresses of all virtual switches. Second one containing username and password exactly same as configured on all switches. And finally, any commands which an user wants to perform. In this case "show ip loopback infterface 0"(loopback interfaces were configured for this on switches) was used as an expamle. 
+1) There are three text files which were feed into the scipt. One file containing management IP addresses of all virtual switches. Second one containing username and password exactly same as configured on all switches. And finally, any commands which an user wants to perform. In this case "show ip loopback interface 0"(loopback interfaces were configured for this on switches) was used as an expamle. 
 2) Script will take these files and will check if files exists in the first place or not. If they exists, IP address file will checked for valid IP addresses.
-3) Before SSH session attempt is made, script will check if switches are raechable or not via ping test. 
+3) Before SSH session attempt is made, script will check if switches are reachable or not via ping test. 
 4) Username and password will be crosscheck with username and password provided on the file. 
 5) Finally, script will produce an output a list containing all the IP addresses that were in an terminal output.
 
